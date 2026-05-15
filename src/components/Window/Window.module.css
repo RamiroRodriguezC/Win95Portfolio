@@ -1,0 +1,124 @@
+.windowInner {
+  display: flex;
+  flex-direction: column;
+  background: #c0c0c0;
+  font-family: 'WIN95FA', 'MS Sans Serif', Tahoma, sans-serif;
+  font-size: 13px;
+  color: #000000;
+  position: relative;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+}
+
+.windowInner::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  pointer-events: none;
+}
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000080;
+  padding: 2px 4px;
+  min-height: 20px;
+  flex-shrink: 0;
+  cursor: default;
+}
+
+.titleText {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  text-rendering: optimizeSpeed;
+}
+
+.titleButtons {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.titleBtn {
+  width: 16px;
+  height: 14px;
+  background: #c0c0c0;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Marlett', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.titleBtn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+.titleBtn:hover::before {
+  border-top: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+}
+
+.titleBtn:active::before {
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+.titleBtn:focus-visible::before {
+  outline: 1px dotted #000000;
+  outline-offset: -2px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin: 4px;
+  min-height: 0;
+  overflow: auto;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #666;
+}

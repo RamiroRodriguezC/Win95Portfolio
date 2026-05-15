@@ -1,0 +1,96 @@
+{
+  "iconBasePath": "/icons/skills",
+
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python",
+      "categories": ["languages"],
+      "icon": "python.png",
+      "description": "Lenguaje de programación interpretado de alto nivel",
+      "level": 3,
+      "years": 2
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "categories": ["languages"],
+      "icon": "java.png",
+      "description": "Lenguaje de programación orientado a objetos",
+      "level": 3,
+      "years": 2
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "categories": ["languages", "frontend"],
+      "icon": "javascript.png",
+      "description": "Lenguaje de programación interpretado",
+      "level": 4,
+      "years": 3
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "categories": ["languages"],
+      "icon": "c.png",
+      "description": "Lenguaje de programación de bajo nivel",
+      "level": 2,
+      "years": 1
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "categories": ["databases"],
+      "icon": "mongodb.png",
+      "description": "Base de datos NoSQL orientada a documentos",
+      "level": 3,
+      "years": 2
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "categories": ["databases"],
+      "icon": "sql.png",
+      "description": "Lenguaje de consulta estructurada",
+      "level": 3,
+      "years": 2
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "categories": ["frontend"],
+      "icon": "react.png",
+      "description": "Biblioteca JavaScript para construir interfaces de usuario",
+      "level": 4,
+      "years": 3
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "categories": ["tools", "automation"],
+      "icon": "n8n.png",
+      "description": "Plataforma de automatización de workflows",
+      "level": 3,
+      "years": 1
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "categories": ["tools"],
+      "icon": "git.png",
+      "description": "Sistema de control de versiones",
+      "level": 4,
+      "years": 3
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "categories": ["tools"],
+      "icon": "github.png",
+      "description": "Plataforma de desarrollo colaborativo",
+      "level": 4,
+      "years": 3
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.iconImg {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+}
+
+.label {
+  font-family: 'WIN95FA', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 2px 4px;
+  word-wrap: break-word;
+  max-width: 80px;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
+  line-height: 1;
+}
+
+.icon.selected .label {
+  background-color: #000080;
+  outline: 1px dotted #fff;
+  outline-offset: -1px;
+}
