@@ -4,6 +4,7 @@ import experienceMeta from './Experience/meta'
 import minesweeperMeta from './Minesweeper/meta'
 import skillsMeta from './Skills/meta'
 import proyectsMeta from './Proyects/meta'
+import curriculumMeta from './Curriculum/meta'
 
 export const APP_REGISTRY = {
   contact: {
@@ -26,4 +27,8 @@ export const APP_REGISTRY = {
     ...proyectsMeta,
     component: lazy(() => import('./Proyects')),
   },
+  curriculum: {
+    ...curriculumMeta,
+    component: lazy(() => import('./Curriculum')),
+  }
 }
