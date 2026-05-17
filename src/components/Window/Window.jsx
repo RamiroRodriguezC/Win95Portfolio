@@ -17,8 +17,8 @@ export default function Window({ windowData: win }) {
   return (
     <Rnd
       default={{
-        x: 50 + Math.random() * 100,
-        y: 50 + Math.random() * 50,
+        x: app.defaultPosition?.x ?? 50 + Math.random() * 100,
+        y: app.defaultPosition?.y ?? 50 + Math.random() * 50,
         width: app.defaultSize.width,
         height: app.defaultSize.height,
       }}
