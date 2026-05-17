@@ -33,3 +33,7 @@ Desktop.ini
 
 # Reference CSS (already integrated into src/)
 cssPro/
+
+# Carpeta docs
+src/docs
+src\docs

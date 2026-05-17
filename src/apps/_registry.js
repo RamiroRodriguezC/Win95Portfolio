@@ -5,12 +5,13 @@ import minesweeperMeta from './Minesweeper/meta'
 import skillsMeta from './Skills/meta'
 import proyectsMeta from './Proyects/meta'
 import curriculumMeta from './Curriculum/meta'
+import mailMeMeta from './MailMe/meta'
 
 export const APP_REGISTRY = {
-  contact: {
+  /* contact: {
     ...contactMeta,
     component: lazy(() => import('./ContactMe')),
-  },
+  }, */
   experience: {
     ...experienceMeta,
     component: lazy(() => import('./Experience')),
@@ -30,5 +31,9 @@ export const APP_REGISTRY = {
   curriculum: {
     ...curriculumMeta,
     component: lazy(() => import('./Curriculum')),
+  },
+  mailMe: {
+    ...mailMeMeta,
+    component: lazy(() => import('./MailMe')),
   }
 }
