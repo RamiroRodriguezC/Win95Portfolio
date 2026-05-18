@@ -1,7 +1,7 @@
 export default {
   id: 'skills',
   title: 'Skills',
-  icon: '/assets/icons/skills.png',
+  icon: '/icons/apps/skills.png',
   type: 'app',
   defaultSize: { width: 450, height: 350 },
 }

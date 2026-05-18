@@ -1,0 +1,68 @@
+.menu {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  display: flex;
+  background: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  box-shadow: 4px 4px 0px #00000080;
+  min-width: 180px;
+}
+
+.sidebar {
+  width: 24px;
+  background: #000080;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 4px 2px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.sidebarText {
+  color: #ffffff;
+  font-family: 'WIN95FA', 'MS Sans Serif', Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0;
+  min-width: 160px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-family: 'WIN95FA', 'MS Sans Serif', Tahoma, sans-serif;
+  font-size: 11px;
+  color: #000;
+}
+
+.item:hover {
+  background: #000080;
+  color: #ffffff;
+}
+
+.itemIcon {
+  width: 16px;
+  height: 16px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  flex-shrink: 0;
+}
+
+.itemText {
+  white-space: nowrap;
+}

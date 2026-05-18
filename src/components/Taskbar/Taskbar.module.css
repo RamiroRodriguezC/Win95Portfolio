@@ -17,6 +17,17 @@
   gap: 4px;
 }
 
+.startIcon {
+  width: 18px;
+  height: 18px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.startWrapper {
+  position: relative;
+}
+
 .startBtn {
   display: flex;
   align-items: center;
@@ -61,11 +72,13 @@
   pointer-events: none;
 }
 
-.startBtn:active {
+.startBtn:active,
+.startBtnPressed {
   padding: 3px 5px 1px 3px;
 }
 
-.startBtn:active::before {
+.startBtn:active::before,
+.startBtnPressed::before {
   border-top: 2px solid #808080;
   border-left: 2px solid #808080;
   border-bottom: 2px solid #ffffff;
@@ -73,7 +86,8 @@
   box-shadow: inset 1px 1px 0px #000000;
 }
 
-.startBtn:active::after {
+.startBtn:active::after,
+.startBtnPressed::after {
   border-top: 1px solid #808080;
   border-left: 1px solid #808080;
   border-bottom: 1px solid #dfdfdf;
