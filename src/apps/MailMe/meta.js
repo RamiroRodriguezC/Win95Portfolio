@@ -1,5 +1,4 @@
 export default {
-  id: 'mail',
   title: 'Mail Me',
   icon: '/icons/apps/mail.png',
   type: 'app',

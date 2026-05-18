@@ -1,5 +1,4 @@
 export default {
-  id: 'minesweeper',
   title: 'Minesweeper',
   icon: '/icons/apps/minesweeper.png',
   type: 'app',

@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import { useWindowStore } from '../../store/windowStore'
 import { APP_REGISTRY } from '../../apps/_registry'
+import { START_MENU_GROUPS } from '../../apps/_display'
 import styles from './StartMenu.module.css'
 
 export default function StartMenu({ onClose }) {
@@ -19,31 +19,27 @@ export default function StartMenu({ onClose }) {
     onClose()
   }
 
-  const appList = Object.entries(APP_REGISTRY).filter(
-    ([, app]) => app.type === 'app'
-  )
-
-  const grouped = [
-    { label: 'Programs', items: appList },
-  ]
-
   return (
     <div className={styles.menu}>
       <div className={styles.sidebar}>
         <span className={styles.sidebarText}>Windows95</span>
       </div>
       <div className={styles.items}>
-        {grouped.map((group) =>
-          group.items.map(([appId, app]) => (
-            <div
-              key={appId}
-              className={styles.item}
-              onClick={() => handleAppClick(appId)}
-            >
-              <img src={app.icon} alt="" className={styles.itemIcon} />
-              <span className={styles.itemText}>{app.title}</span>
-            </div>
-          ))
+        {START_MENU_GROUPS.map((group) =>
+          group.items.map((appId) => {
+            const app = APP_REGISTRY[appId]
+            if (!app) return null
+            return (
+              <div
+                key={appId}
+                className={styles.item}
+                onClick={() => handleAppClick(appId)}
+              >
+                <img src={app.icon} alt="" className={styles.itemIcon} />
+                <span className={styles.itemText}>{app.title}</span>
+              </div>
+            )
+          })
         )}
       </div>
     </div>

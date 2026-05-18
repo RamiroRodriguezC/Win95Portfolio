@@ -3,7 +3,7 @@ import { Rnd } from 'react-rnd'
 import { APP_REGISTRY } from '../../apps/_registry'
 import { useWindowStore } from '../../store/windowStore'
 import TitleBar from './TitleBar'
-import FolderWindow from '../FolderWindow/FolderWindow'
+import FolderWindow from '../Folder'
 import styles from './Window.module.css'
 
 export default function Window({ windowData: win }) {
@@ -27,6 +27,7 @@ export default function Window({ windowData: win }) {
       minWidth={200}
       minHeight={100}
       className={styles.window}
+      dragHandleClassName={styles.titleBar}
     >
       <div className={styles.windowInner}>
         <TitleBar

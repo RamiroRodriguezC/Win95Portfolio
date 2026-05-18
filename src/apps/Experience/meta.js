@@ -1,5 +1,4 @@
 export default {
-  id: 'experience',
   title: 'Experience',
   icon: '/icons/apps/experience.png',
   type: 'app',

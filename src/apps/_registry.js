@@ -1,17 +1,11 @@
 import { lazy } from 'react'
-import contactMeta from './ContactMe/meta'
 import experienceMeta from './Experience/meta'
 import minesweeperMeta from './Minesweeper/meta'
 import skillsMeta from './Skills/meta'
-import proyectsMeta from './Proyects/meta'
 import curriculumMeta from './Curriculum/meta'
 import mailMeMeta from './MailMe/meta'
 
 export const APP_REGISTRY = {
-  /* contact: {
-    ...contactMeta,
-    component: lazy(() => import('./ContactMe')),
-  }, */
   experience: {
     ...experienceMeta,
     component: lazy(() => import('./Experience')),
@@ -24,10 +18,6 @@ export const APP_REGISTRY = {
     ...skillsMeta,
     component: lazy(() => import('./Skills')),
   },
-  proyects: {
-    ...proyectsMeta,
-    component: lazy(() => import('./Proyects')),
-  },
   curriculum: {
     ...curriculumMeta,
     component: lazy(() => import('./Curriculum')),
@@ -35,5 +25,17 @@ export const APP_REGISTRY = {
   mailMe: {
     ...mailMeMeta,
     component: lazy(() => import('./MailMe')),
-  }
+  },
+  proyects: {
+    title: 'Proyects',
+    icon: '/icons/apps/folder.png',
+    type: 'folder',
+    defaultSize: { width: 500, height: 400 },
+  },
+  folder: {
+    title: 'Folder',
+    icon: '/icons/apps/folder.png',
+    type: 'folder',
+    defaultSize: { width: 500, height: 400 },
+  },
 }

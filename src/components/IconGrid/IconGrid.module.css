@@ -1,0 +1,8 @@
+.iconGrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 100%;
+  width: fit-content;
+  align-content: flex-start;
+}

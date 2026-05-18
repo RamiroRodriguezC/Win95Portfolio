@@ -8,15 +8,6 @@
   background-repeat: no-repeat;
 }
 
-.iconGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 80px);
-  grid-auto-rows: 100px;
-  gap: 0;
-  width: fit-content;
-  align-content: start;
-}
-
 .windowsLayer {
   position: absolute;
   inset: 0;

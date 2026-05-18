@@ -1,5 +1,4 @@
 export default {
-  id: 'skills',
   title: 'Skills',
   icon: '/icons/apps/skills.png',
   type: 'app',

@@ -1,5 +1,4 @@
 export default {
-  id: 'cv',
   title: 'Curriculum',
   icon: 'public/icons/apps/cv.png',
   type: 'app',
